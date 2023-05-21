@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #1a1924;
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.search-field {
+  margin-bottom: 200px;
+}
+
+.search-field h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+input[type=text] {
+  line-height: 42px;
+  height: 42px;
+  width: 300px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+button {
+  line-height: 42px;
+  height: 42px;
+  width: 100px;
+  background-color:  /* #cf5e10 */  #ee7624;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 550;
+}
+
+.search-field p {
+  height: 42px;
+  width: 300px;
+  margin-top: 5px;
+  color: #f00;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+.user {
+  display: grid;
+  justify-items: center;
+  margin-top: 60px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.user img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.user h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.details {
+  display: flex;
+  margin: 0 0 0 20px;
+}
+
+.data {
+  margin: 0 10px;
+}
+
+.details .data div {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  color: #06E172;
+  font-weight: 600;
+}
+
+.details .data p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user .link {
+  height: 35px;
+  width: 150px;
+  background-color: #EB7100;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+
+.user div a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.display {
+  display: grid;
+  gap: 20px;
+}
+
+.repo {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  padding: 15px 20px;
+  background-color: rgb(255 255 255 / 0.1);
+  border-radius: 5px;
+}
+.repo div h3 {
+  color: #06E172;
+  margin-bottom: 5px;
+}
+
+.repo p {
+  color: #fff;
+}
