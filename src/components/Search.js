@@ -9,6 +9,12 @@ function Search() {
   const [errorMsg, setErrorMsg] = useState('');
 
   let userEndPoint = `https://api.github.com/users/${input}`;
+  let token = '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';
+  let options = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +29,7 @@ function Search() {
 
   const checkData = async () => {
     try {
-      const userResponse = await axios.get(userEndPoint);
+      const userResponse = await axios.get(userEndPoint, options);
       if (userResponse.data) {;
         navigateToUser(`/user/${input}`);
         setErrorMsg('');

@@ -21,14 +21,20 @@ function User() {
 
   let userEndPoint = `https://api.github.com/users/${username}`;
   let reposEndPoint = `https://api.github.com/users/${username}/repos`;
+  let token = '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';
+  let options = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  };
 
   
   useEffect(() => {
     
     const fetchData = async () => {
       try {
-        const userResponse = await axios.get(userEndPoint);
-        const userReposResponse = await axios.get(reposEndPoint);
+        const userResponse = await axios.get(userEndPoint, options);
+        const userReposResponse = await axios.get(reposEndPoint, options);
         
         setUserProfilePic(userResponse.data.avatar_url); 
         setUserName(userResponse.data.name);
